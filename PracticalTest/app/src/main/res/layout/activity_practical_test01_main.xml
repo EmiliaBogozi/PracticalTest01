@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PracticalTest01MainActivity" >
+
+    <Button
+        android:id="@+id/navigate_to_secondary_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Navigate to secondary activity" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:rowCount="2">
+
+        <EditText
+            android:id="@+id/count1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:enabled="false"
+            android:saveEnabled="false"/>
+
+        <EditText
+            android:id="@+id/count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:enabled="false"
+            android:saveEnabled="false"/>
+
+        <Button
+            android:id="@+id/pressMe1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press me!"
+            app:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/pressMe2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Press me, too!"
+            app:layout_gravity="center" />
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
